@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  font-family: "Press Start 2P", cursive;
+}
+* body {
+  margin: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-image: url("./src/assets/img/Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* body #app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+* body #app .pokemon-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: grab;
+}
+* body #app .pokemon-card {
+  text-shadow: 0px -1px 1px black;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 12.5rem;
+  background-color: ghostwhite;
+  border-radius: 5px;
+  margin: 0.7rem;
+}
+* body #app .pokemon-card.fire {
+  border: 5px solid #FF4500;
+  color: #FF4500;
+  box-shadow: 0px 0px 10px 0px #FF4500;
+}
+* body #app .pokemon-card.water {
+  border: 5px solid #1E90FF;
+  color: #1E90FF;
+  box-shadow: 0px 0px 10px 0px #1E90FF;
+}
+* body #app .pokemon-card.grass {
+  border: 5px solid #32CD32;
+  color: #32CD32;
+  box-shadow: 0px 0px 10px 0px #32CD32;
+}
+* body #app .pokemon-card.electric {
+  border: 5px solid #FFD700;
+  color: #FFD700;
+  box-shadow: 0px 0px 10px 0px #FFD700;
+}
+* body #app .pokemon-card.psychic {
+  border: 5px solid #FF69B4;
+  color: #FF69B4;
+  box-shadow: 0px 0px 10px 0px #FF69B4;
+}
+* body #app .pokemon-card.ice {
+  border: 5px solid #87CEFA;
+  color: #87CEFA;
+  box-shadow: 0px 0px 10px 0px #87CEFA;
+}
+* body #app .pokemon-card.dragon {
+  border: 5px solid #6A5ACD;
+  color: #6A5ACD;
+  box-shadow: 0px 0px 10px 0px #6A5ACD;
+}
+* body #app .pokemon-card.dark {
+  border: 5px solid #696969;
+  color: #696969;
+  box-shadow: 0px 0px 10px 0px #696969;
+}
+* body #app .pokemon-card.fairy {
+  border: 5px solid #FFB6C1;
+  color: #FFB6C1;
+  box-shadow: 0px 0px 10px 0px #FFB6C1;
+}
+* body #app .pokemon-card.normal {
+  border: 5px solid #A9A9A9;
+  color: #A9A9A9;
+  box-shadow: 0px 0px 10px 0px #A9A9A9;
+}
+* body #app .pokemon-card.fighting {
+  border: 5px solid #8B4513;
+  color: #8B4513;
+  box-shadow: 0px 0px 10px 0px #8B4513;
+}
+* body #app .pokemon-card.flying {
+  border: 5px solid #87CEEB;
+  color: #87CEEB;
+  box-shadow: 0px 0px 10px 0px #87CEEB;
+}
+* body #app .pokemon-card.poison {
+  border: 5px solid #9400D3;
+  color: #9400D3;
+  box-shadow: 0px 0px 10px 0px #9400D3;
+}
+* body #app .pokemon-card.ground {
+  border: 5px solid #D2B48C;
+  color: #D2B48C;
+  box-shadow: 0px 0px 10px 0px #D2B48C;
+}
+* body #app .pokemon-card.rock {
+  border: 5px solid #8B4513;
+  color: #8B4513;
+  box-shadow: 0px 0px 10px 0px #8B4513;
+}
+* body #app .pokemon-card.bug {
+  border: 5px solid #95c700;
+  color: #95c700;
+  box-shadow: 0px 0px 10px 0px #95c700;
+}
+* body #app .pokemon-card.ghost {
+  border: 5px solid #8B008B;
+  color: #8B008B;
+  box-shadow: 0px 0px 10px 0px #8B008B;
+}
+* body #app .pokemon-card.steel {
+  border: 5px solid #C0C0C0;
+  color: #C0C0C0;
+  box-shadow: 0px 0px 10px 0px #C0C0C0;
+}
+* body #app .pokemon-card .pokemon-name {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+* body #app .pokemon-card .pokemon-id {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+  font-size: 0.7rem;
+}
+* body #app .pokemon-card .sprite-container {
+  width: 10rem;
+  object-fit: contain;
+}
+* body #app .pokemon-card .sprite-container .pokemon-sprite {
+  width: 100%;
+  filter: drop-shadow(0px 3px 5px black);
+}
+* body #app .pokemon-card .pokemon-type {
+  margin: 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+* body #app .pokemon-card hr {
+  margin: 0;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-color: black;
+  opacity: 15%;
+}
+* body #app .pokemon-card .pokemon-stats {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+* body #app .pokemon-card .pokemon-stats p {
+  margin: 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+* body .contentNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  gap: 1rem;
+}
+* body .contentNumber button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: ghostwhite;
+}
+* body .contentNumber button:hover {
+  color: ghostwhite;
+  border: 1px solid ghostwhite;
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
